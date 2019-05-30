@@ -6,8 +6,12 @@ TSSKit automatically selects the appropriate Threshold Signature Scheme based on
 
 TSSKit also generates a set of ready-to-use codebase/scripts that are optimized based on a set of specified parameters.
 
+> Welcome to create any number of pull requests to contribute more codebases that we've missed. BUIDL!
+
+**Active curators: [yhuag](https://github.com/yhuag) and [tina1998612](https://github.com/tina1998612)**
+
 ## Codebases
-### ECDSA
+## ECDSA
 #### Javascript
 1. Bitchain (npm / non-threshold):  https://github.com/bitchan/eccrypto
 2. Elliptic (npm / non-threshold): https://www.npmjs.com/package/elliptic
@@ -41,7 +45,7 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 #### Swift
 1. Sajjon (non-threshold): https://github.com/Sajjon/EllipticCurveKit
 
-### Schnorr
+## Schnorr
 #### Javascript
 1. NPM: https://github.com/guggero/bip-schnorr
 
@@ -75,7 +79,7 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 
 3. SolCrypto (non-threshold): https://github.com/HarryR/solcrypto
 
-### Ed25519
+## Ed25519
 #### Javascript
 1. NPM: https://github.com/dazoe/ed25519
 
@@ -121,7 +125,7 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 
 3. official pip: https://pypi.org/project/ed25519/
 
-### BLS
+## BLS
 #### Javascript
 1. Difnity (npm): https://github.com/dfinity/js-bls-lib
 
