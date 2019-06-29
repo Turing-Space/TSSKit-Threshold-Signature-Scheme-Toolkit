@@ -309,11 +309,15 @@ Weak RNG Attacks</td>
 |                                                                                                      | Multi-sig                                                                                                  | Threshold-sig                                                      |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Relationship between (number of signers) and  (signature length, generation time, verification time) | Scales linearly                                                                                            | Independent                                                        |
-| reveal the identities of signers                                                                     | Yes                                                                                                        | No                                                                 |
-| signature verification                                                                               | Use all public keys                                                                                        | Use a unique fixed public key                                      |
-| can do m-out-of-n signing                                                                            | Yes                                                                                                        | Yes                                                                |
-| signature is composed of                                                                             | Concatenation of ( description of the subgroup + regular signatures computed by each member’s secret key ) | Regular signatures computed by all members' aggregated private key |
+| Reveal the identities of signers                                                                     | Yes                                                                                                        | No                                                                 |
+| Signature verification                                                                               | Use all public keys                                                                                        | Use a unique fixed public key                                      |
+| Can do m-out-of-n signing                                                                            | Yes                                                                                                        | Yes                                                                |
+| Signature is composed of                                                                             | Concatenation of ( description of the subgroup + regular signatures computed by each member’s secret key ) | Regular signatures computed by all members' aggregated private key |
 
+### References
+1. https://bitcoin.stackexchange.com/questions/50836/multi-signature-public-key-validation 
+2. https://www.iacr.org/archive/pkc2003/25670031/25670031.pdf 
+  
 
 ## Codebases
 ## ECDSA
