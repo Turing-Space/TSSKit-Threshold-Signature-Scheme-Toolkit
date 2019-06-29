@@ -10,6 +10,32 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 
 **Active curators: [yhuag](https://github.com/yhuag) and [tina1998612](https://github.com/tina1998612)**
 
+## Types fo Schemes
+- Shamir's Secret Sharing (SSS)
+- Threshold ECDSA
+- Threshold Ed25519
+- Schnorr Signatures
+- BLS Signatures
+
+## Options
+| Option                    | Choice                    |
+| ------------------------- | ------------------------- |
+| Private Key Splitting     | True / False              |
+| Multi-signature Detection | True / False              |
+| HD Derivation             | True / False              |
+| Weight                    | True / False              |
+| Signer Privacy            | True / False              |
+| Signature Size            | Linear Growth / Constant  |
+| Key Generation Time       | Linear Growth / Constant  |
+| Key Generation Round      | Value                     |
+| Key Generation Role       | Single Party / DKG Scheme |
+| Verification Time         | Strict / Relax            |
+| Signing Time              | Strict / Relax            |
+| Signing Round             | Value                     |
+| Curve                     | Curve Choice              |
+
+> Free to create pull request to add more
+
 ## Codebases
 ## ECDSA
 #### Javascript
