@@ -3,8 +3,8 @@
 
 
 ![](https://img.shields.io/badge/Funds-Binance%20Labs-yellow.svg)
-![](https://img.shields.io/badge/Grants-Gitcoin-darkgreen.svg)
-![](https://img.shields.io/badge/Build-Turing%20Chain-darkred.svg)
+![](https://img.shields.io/badge/Grants-Gitcoin-green.svg)
+![](https://img.shields.io/badge/Build-Turing%20Chain-red.svg)
 
 ## Description
 TSSKit automatically selects the appropriate Threshold Signature Scheme based on a set of options required by the secret sharing needs of each application.   This comprehensive list of options includes private key splitting, multisig detection, HD derivation, signer privacy, and signature size, etc.
