@@ -315,9 +315,9 @@ Weak RNG Attacks</td>
   <tr>
     <td>Javascript</td>
     <td> 
-Bitchain (npm / non-threshold): https://github.com/bitchan/eccrypto
+- Bitchain (npm / non-threshold): https://github.com/bitchan/eccrypto
 
-Elliptic (npm / non-threshold): https://www.npmjs.com/package/elliptic
+- Elliptic (npm / non-threshold): https://www.npmjs.com/package/elliptic
 
 </td>
     <td>Hidden</td>
