@@ -315,14 +315,45 @@ Weak RNG Attacks</td>
   <tr>
     <td>Javascript</td>
     <td> 
+
 - Bitchain (npm / non-threshold): https://github.com/bitchan/eccrypto
 
 - Elliptic (npm / non-threshold): https://www.npmjs.com/package/elliptic
 
 </td>
-    <td>Hidden</td>
-    <td>N/A</td>
-    <td>N/A</td>
+    <td>
+    
+- NPM: https://github.com/guggero/bip-schnorr 
+
+- Bcoin: https://github.com/bcoin-org/schnorr
+
+- guggero (non-threshold): https://github.com/guggero/bip-schnorr 
+    </td>
+    <td>
+- NPM: https://github.com/dazoe/ed25519 
+
+- Substack-Supercop-ref10: https://github.com/substack/ed25519-supercop
+
+- Ed25519 (npm): https://www.npmjs.com/package/ed25519 
+
+- Ed25519-Supercop (npm): https://www.npmjs.com/package/ed25519-supercop
+
+- Ed25519-hap (npm): https://www.npmjs.com/package/ed25519-hap
+
+- Ed25519-hd-key: https://www.npmjs.com/package/ed25519-hd-key
+
+- Types (npm):
+https://www.npmjs.com/package/@types/ed25519 
+
+    </td>
+    <td>
+- Difnity (npm): https://github.com/dfinity/js-bls-lib
+
+- Kfichter: https://github.com/kfichter/solidity-bls
+
+- bls-signatures (npm): https://www.npmjs.com/package/bls-signatures
+
+    </td>
   </tr>
 </table>
 
