@@ -305,6 +305,15 @@ Weak RNG Attacks</td>
   </tr>
 </table>
 
+## Multi Signature vs Threshold Signature
+|                                                                                                      | Multi-sig                                                                                                  | Threshold-sig                                                      |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Relationship between (number of signers) and  (signature length, generation time, verification time) | Scales linearly                                                                                            | Independent                                                        |
+| reveal the identities of signers                                                                     | Yes                                                                                                        | No                                                                 |
+| signature verification                                                                               | Use all public keys                                                                                        | Use a unique fixed public key                                      |
+| can do m-out-of-n signing                                                                            | Yes                                                                                                        | Yes                                                                |
+| signature is composed of                                                                             | Concatenation of ( description of the subgroup + regular signatures computed by each member’s secret key ) | Regular signatures computed by all members' aggregated private key |
+
 
 ## Codebases
 ## ECDSA
@@ -460,3 +469,4 @@ Weak RNG Attacks</td>
 2. pip: https://pypi.org/project/python-bls/
 
 3. bls-lib doc: https://bls-lib.readthedocs.io/en/latest/
+
