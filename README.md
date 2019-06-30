@@ -12,12 +12,12 @@
   - [Options](#Options)
   - [Conceptual Comparisons across Schemes](#Conceptual-Comparisons-across-Schemes)
   - [Multi Signature vs Threshold Signature](#Multi-Signature-vs-Threshold-Signature)
-    - [References](#References)
   - [Codebases](#Codebases)
     - [ECDSA](#ECDSA)
     - [Schnorr](#Schnorr)
     - [Ed25519](#Ed25519)
     - [BLS](#BLS)
+  - [References](#References)
   
 ## Description
 TSSKit automatically selects the appropriate Threshold Signature Scheme based on a set of options required by the secret sharing needs of each application.   This comprehensive list of options includes private key splitting, multisig detection, HD derivation, signer privacy, and signature size, etc.
@@ -326,10 +326,6 @@ Weak RNG Attacks</td>
 | Signature verification                                                                               | Use all public keys                                                                                        | Use a unique fixed public key                                      |
 | Can do m-out-of-n signing                                                                            | Yes                                                                                                        | Yes                                                                |
 | Signature is composed of                                                                             | Concatenation of ( description of the subgroup + regular signatures computed by each member’s secret key ) | Regular signatures computed by all members' aggregated private key |
-
-### References
-1. https://bitcoin.stackexchange.com/questions/50836/multi-signature-public-key-validation 
-2. https://www.iacr.org/archive/pkc2003/25670031/25670031.pdf 
   
 
 ## Codebases
@@ -487,3 +483,59 @@ Weak RNG Attacks</td>
 
 3. bls-lib doc: https://bls-lib.readthedocs.io/en/latest/
 
+## References
+1. Alternative Signatures Schemes: [https://blockchainatberkeley.blog/alternative-signatures-schemes-14a563d9d562](https://blockchainatberkeley.blog/alternative-signatures-schemes-14a563d9d562)  
+
+2. Multisig vs SSS vs Threshold signature (with graph illustration): [https://www.kzencorp.com/post/threshold-signatures-private-key-the-next-generation](https://www.kzencorp.com/post/threshold-signatures-private-key-the-next-generation)  
+
+3. How Schnorr signatures may improve Bitcoin: [https://medium.com/cryptoadvance/how-schnorr-signatures-may-improve-bitcoin-91655bcb4744](https://medium.com/cryptoadvance/how-schnorr-signatures-may-improve-bitcoin-91655bcb4744)
+
+4. BLS signatures: better than Schnorr: [https://medium.com/cryptoadvance/bls-signatures-better-than-schnorr-5a7fe30ea716](https://medium.com/cryptoadvance/bls-signatures-better-than-schnorr-5a7fe30ea716)
+
+5. ECDSA is not that bad: two-party signing without Schnorr or BLS: [https://medium.com/cryptoadvance/ecdsa-is-not-that-bad-two-party-signing-without-schnorr-or-bls-1941806ec36f](https://medium.com/cryptoadvance/ecdsa-is-not-that-bad-two-party-signing-without-schnorr-or-bls-1941806ec36f) 
+
+6. Generator Point: [https://crypto.stackexchange.com/questions/53321/what-are-the-coordinates-of-a-generator-point](https://crypto.stackexchange.com/questions/53321/what-are-the-coordinates-of-a-generator-point)
+
+7. Elliptic Curve Cryptography: [https://eng.paxos.com/blockchain-101-elliptic-curve-cryptography](https://eng.paxos.com/blockchain-101-elliptic-curve-cryptography)
+
+8. Why Schnorr signatures will help solve 2 of Bitcoin’s biggest problems today: [https://medium.com/@SDWouters/why-schnorr-signatures-will-help-solve-2-of-bitcoins-biggest-problems-today-9b7718e7861c](https://medium.com/@SDWouters/why-schnorr-signatures-will-help-solve-2-of-bitcoins-biggest-problems-today-9b7718e7861c)
+
+9. Schnorr Signatures & The Inevitability of Privacy in Bitcoin: [https://medium.com/digitalassetresearch/schnorr-signatures-the-inevitability-of-privacy-in-bitcoin-b2f45a1f7287](https://medium.com/digitalassetresearch/schnorr-signatures-the-inevitability-of-privacy-in-bitcoin-b2f45a1f7287)
+
+10. ECDSA: [https://blog.cloudflare.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/](https://blog.cloudflare.com/ecdsa-the-digital-signature-algorithm-of-a-better-internet/) 
+
+11. ed25519: [https://ed25519.cr.yp.to/](https://ed25519.cr.yp.to/) 
+
+12. schnorr: [https://github.com/WebOfTrustInfo/rwot1-sf/blob/master/topics-and-advance-readings/Schnorr-Signatures--An-Overview.md](https://github.com/WebOfTrustInfo/rwot1-sf/blob/master/topics-and-advance-readings/Schnorr-Signatures--An-Overview.md) 
+
+13. choice of curve affects key size: [https://stackoverflow.com/questions/6665353/is-there-a-standardized-fixed-length-encoding-for-ec-public-keys](https://stackoverflow.com/questions/6665353/is-there-a-standardized-fixed-length-encoding-for-ec-public-keys)  
+
+14. SafeCurves: [http://safecurves.cr.yp.to/ladder.html](http://safecurves.cr.yp.to/ladder.html) 
+
+15. Curve Comparisons: [http://safecurves.cr.yp.to/index.html](http://safecurves.cr.yp.to/index.html)
+
+16. min key size recommendation website: [https://www.keylength.com/en/4/](https://www.keylength.com/en/4/) 
+
+17. Why are key lengths in asymmetric algorithms typically longer than key lengths in symmetric algorithms?: [https://crypto.stackexchange.com/questions/46852/why-are-key-lengths-in-asymmetric-algorithms-typically-longer-than-key-lengths-i](https://crypto.stackexchange.com/questions/46852/why-are-key-lengths-in-asymmetric-algorithms-typically-longer-than-key-lengths-i) 
+
+18. Elliptic curve Schnorr-based signatures in Bitcoin: [https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/schnorr-signatures/](https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/schnorr-signatures/)
+
+19. Ed25519 Signature 2018: [https://w3c-dvcg.github.io/lds-ed25519-2018/](https://w3c-dvcg.github.io/lds-ed25519-2018/)
+
+20. Aggregated Ed25519 Signature: [https://github.com/KZen-networks/multi-party-eddsa/wiki/Aggregated-Ed25519-Signatures#aggregated-ed25519-signature](https://github.com/KZen-networks/multi-party-eddsa/wiki/Aggregated-Ed25519-Signatures#aggregated-ed25519-signature)
+
+21. Schnorr signatures: [https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/schnorr-signatures/](https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/schnorr-signatures/)
+
+22. BLS: Is it really that slow?: [https://blog.dash.org/bls-is-it-really-that-slow-4ca8c1fcd38e](https://blog.dash.org/bls-is-it-really-that-slow-4ca8c1fcd38e)
+
+23. Hash Function Requirementsfor Schnorr Signatures: [http://www.neven.org/papers/schnorr.pdf](http://www.neven.org/papers/schnorr.pdf)
+
+24. A conversation with Dan Boneh: [https://diyhpl.us/wiki/transcripts/2016-july-bitcoin-developers-miners-meeting/dan-boneh/](https://diyhpl.us/wiki/transcripts/2016-july-bitcoin-developers-miners-meeting/dan-boneh/)
+
+25. ecdsa attack: [https://crypto.stackexchange.com/questions/55876/is-there-any-ecdsa-attack-if-i-have-millions-of-signatures](https://crypto.stackexchange.com/questions/55876/is-there-any-ecdsa-attack-if-i-have-millions-of-signatures) 
+
+26. A Leakage-Resilient Pairing-Based Variant of the Schnorr Signature Scheme: [https://link.springer.com/chapter/10.1007/978-3-642-45239-0_11](https://link.springer.com/chapter/10.1007/978-3-642-45239-0_11)
+
+27. Bitcoin Stackexchange: [https://bitcoin.stackexchange.com/questions/50836/multi-signature-public-key-validation](https://bitcoin.stackexchange.com/questions/50836/multi-signature-public-key-validation) 
+
+28. Fast Multiparty Threshold ECDSA with Fast Trustless Setup: [https://www.iacr.org/archive/pkc2003/25670031/25670031.pdf](https://www.iacr.org/archive/pkc2003/25670031/25670031.pdf) 
