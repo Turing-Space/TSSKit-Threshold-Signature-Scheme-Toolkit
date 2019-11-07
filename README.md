@@ -30,7 +30,7 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 
 **Active reviewers: [ChenPoWei](https://github.com/ChenPoWei)**
 
-## Types fo Schemes
+## Types of Schemes
 - Shamir's Secret Sharing (SSS)
 - Threshold ECDSA
 - Threshold Ed25519
