@@ -8,7 +8,7 @@
 
 ## Table of Contents 
   - [Description](#Description)
-  - [Types fo Schemes](#Types-fo-Schemes)
+  - [Types of Schemes](#Types-of-Schemes)
   - [Options](#Options)
   - [Conceptual Comparisons across Schemes](#Conceptual-Comparisons-across-Schemes)
   - [Multi Signature vs Threshold Signature](#Multi-Signature-vs-Threshold-Signature)
@@ -30,7 +30,7 @@ TSSKit also generates a set of ready-to-use codebase/scripts that are optimized 
 
 **Active reviewers: [ChenPoWei](https://github.com/ChenPoWei)**
 
-## Types fo Schemes
+## Types of Schemes
 - Shamir's Secret Sharing (SSS)
 - Threshold ECDSA
 - Threshold Ed25519
